@@ -1,7 +1,7 @@
 //--------------------------------------------------------
 //-- stylelint config
 //--------------------------------------------------------
-import loader from "@absolunet/stylelint-loader";
+import loader from "@valtech-commerce/stylelint-loader";
 
 const config = loader(__dirname);
 

@@ -9,10 +9,10 @@
 
 | Package | Version | Description | Documentation |
 |---|---|---|---|
-| **[@absolunet/stylelint-config-core](packages/core)** | [![npm](https://img.shields.io/npm/v/@absolunet/stylelint-config-core.svg)](https://www.npmjs.com/package/@absolunet/stylelint-config-core) | **Core rules** | [docs](https://documentation.absolunet.com/stylelint-config/core) |
-| [@absolunet/stylelint-config-scss](packages/scss) | [![npm](https://img.shields.io/npm/v/@absolunet/stylelint-config-scss.svg)](https://www.npmjs.com/package/@absolunet/stylelint-config-scss) | SCSS | [docs](https://documentation.absolunet.com/stylelint-config/scss) |
-| [@absolunet/stylelint-config-salesforce](packages/salesforce) | [![npm](https://img.shields.io/npm/v/@absolunet/stylelint-config-salesforce.svg)](https://www.npmjs.com/package/@absolunet/stylelint-config-salesforce) | Salesforce | [docs](https://documentation.absolunet.com/stylelint-config/salesforce) |
-| [@absolunet/stylelint-config-pwastudio](packages/pwastudio) | [![npm](https://img.shields.io/npm/v/@absolunet/stylelint-config-pwastudio.svg)](https://www.npmjs.com/package/@absolunet/stylelint-config-pwastudio) | PWA Studio | [docs](https://documentation.absolunet.com/stylelint-config/pwastudio) |
+| **[@valtech-commerce/stylelint-config-core](packages/core)** | [![npm](https://img.shields.io/npm/v/@valtech-commerce/stylelint-config-core.svg)](https://www.npmjs.com/package/@valtech-commerce/stylelint-config-core) | **Core rules** | [docs](https://valtech-commerce.github.io/stylelint-config/core) |
+| [@valtech-commerce/stylelint-config-scss](packages/scss) | [![npm](https://img.shields.io/npm/v/@valtech-commerce/stylelint-config-scss.svg)](https://www.npmjs.com/package/@valtech-commerce/stylelint-config-scss) | SCSS | [docs](https://valtech-commerce.github.io/stylelint-config/scss) |
+| [@valtech-commerce/stylelint-config-salesforce](packages/salesforce) | [![npm](https://img.shields.io/npm/v/@valtech-commerce/stylelint-config-salesforce.svg)](https://www.npmjs.com/package/@valtech-commerce/stylelint-config-salesforce) | Salesforce | [docs](https://valtech-commerce.github.io/stylelint-config/salesforce) |
+| [@valtech-commerce/stylelint-config-pwastudio](packages/pwastudio) | [![npm](https://img.shields.io/npm/v/@valtech-commerce/stylelint-config-pwastudio.svg)](https://www.npmjs.com/package/@valtech-commerce/stylelint-config-pwastudio) | PWA Studio | [docs](https://valtech-commerce.github.io/stylelint-config/pwastudio) |
 
 ### Dependency tree
 ```mermaid
@@ -24,7 +24,7 @@
 ## Install
 
 ```
-$ npm install @absolunet/stylelint-config-[RULESET]
+$ npm install @valtech-commerce/stylelint-config-[RULESET]
 ```
 
 
@@ -33,7 +33,7 @@ $ npm install @absolunet/stylelint-config-[RULESET]
 Add some stylelint config to your `.stylelintrc.yaml`:
 
 ```yaml
-extends: '@absolunet/stylelint-config-[RULESET]'
+extends: '@valtech-commerce/stylelint-config-[RULESET]'
 ```
 
 
@@ -43,14 +43,9 @@ extends: '@absolunet/stylelint-config-[RULESET]'
 - [stylelint-order](https://github.com/hudochenkov/stylelint-order) - Order related linting rules
 
 
-## Related
-
-- [@absolunet/stylelint-loader](https://github.com/absolunet/node-stylelint-loader) - stylelint extendable config YAML loader.
-
-
 ## Documentation
 
-See the [full documentation](https://documentation.absolunet.com/stylelint-config/core) for an in-depth look.
+See the [full documentation](https://valtech-commerce.github.io/stylelint-config/core) for an in-depth look.
 
 See the [Changelog](CHANGELOG.md) to see what has changed.
 
@@ -69,13 +64,13 @@ By interacting with this repository, organization, or community you agree to abi
 
 ## License
 
-[MIT](LICENSE) © [Absolunet](https://absolunet.com)
+[MIT](LICENSE) © [Valtech Canada inc.](https://www.valtech.ca/)
 
 
 
 
-[tests-badge]: https://github.com/absolunet/stylelint-config/workflows/tests/badge.svg?branch=production
+[tests-badge]: https://github.com/valtech-commerce/stylelint-config/workflows/tests/badge.svg?branch=main
 [lerna-badge]: https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg
 
-[tests-url]: https://github.com/absolunet/stylelint-config/actions?query=workflow%3Atests+branch%3Aproduction
+[tests-url]: https://github.com/valtech-commerce/stylelint-config/actions?query=workflow%3Atests+branch%3Amain
 [lerna-url]: https://lerna.js.org/

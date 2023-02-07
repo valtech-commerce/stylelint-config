@@ -1,4 +1,4 @@
-# @absolunet/stylelint-config-salesforce
+# @valtech-commerce/stylelint-config-salesforce
 
 [![npm][npm-badge]][npm-url]
 [![npm dependencies][dependencies-badge]][dependencies-url]
@@ -10,13 +10,13 @@
 
 Opinionated stylelint [extendable config](https://stylelint.io/user-guide/configuration/#extends) for [Salesforce](https://www.salesforce.com/).
 
-Extends [@absolunet/stylelint-config-scss](https://github.com/absolunet/stylelint-config)
+Extends [@valtech-commerce/stylelint-config-scss](https://github.com/valtech-commerce/stylelint-config)
 
 
 ## Install
 
 ```
-$ npm install @absolunet/stylelint-config-salesforce
+$ npm install @valtech-commerce/stylelint-config-salesforce
 ```
 
 
@@ -25,20 +25,18 @@ $ npm install @absolunet/stylelint-config-salesforce
 Add some stylelint config to your `.stylelintrc.yaml`:
 
 ```yaml
-extends: '@absolunet/stylelint-config-salesforce'
+extends: '@valtech-commerce/stylelint-config-salesforce'
 ```
 
 
 ## Related
 
-- [@absolunet/stylelint-loader](https://github.com/absolunet/node-stylelint-loader) - stylelint extendable config YAML loader.
-
-- [Other configs](https://github.com/absolunet/stylelint-config)
+- [Other configs](https://github.com/valtech-commerce/stylelint-config)
 
 
 ## Documentation
 
-See the [full documentation](https://documentation.absolunet.com/stylelint-config/salesforce) for an in-depth look.
+See the [full documentation](https://valtech-commerce.github.io/stylelint-config/salesforce) for an in-depth look.
 
 See the [Changelog](../../CHANGELOG.md) to see what has changed.
 
@@ -57,19 +55,19 @@ By interacting with this repository, organization, or community you agree to abi
 
 ## License
 
-[MIT](LICENSE) © [Absolunet](https://absolunet.com)
+[MIT](LICENSE) © [Valtech Canada inc.](https://www.valtech.ca/)
 
 
 
 
-[npm-badge]:          https://img.shields.io/npm/v/@absolunet/stylelint-config-salesforce?style=flat-square
-[dependencies-badge]: https://img.shields.io/david/absolunet/stylelint-config?path=packages/salesforce&style=flat-square
-[tests-badge]:        https://img.shields.io/github/workflow/status/absolunet/stylelint-config/tests/master?label=tests&style=flat-square
-[npms-badge]:         https://badges.npms.io/%40absolunet%2Fstylelint-config-salesforce.svg?style=flat-square
+[npm-badge]:          https://img.shields.io/npm/v/@valtech-commerce/stylelint-config-salesforce?style=flat-square
+[dependencies-badge]: https://img.shields.io/david/valtech-commerce/stylelint-config?path=packages/salesforce&style=flat-square
+[tests-badge]:        https://img.shields.io/github/workflow/status/valtech-commerce/stylelint-config/tests/main?label=tests&style=flat-square
+[npms-badge]:         https://badges.npms.io/%40valtech-commerce%2Fstylelint-config-salesforce.svg?style=flat-square
 [license-badge]:      https://img.shields.io/badge/license-MIT-green?style=flat-square
 
-[npm-url]:          https://www.npmjs.com/package/@absolunet/stylelint-config-salesforce
-[dependencies-url]: https://david-dm.org/absolunet/stylelint-config?path=packages/salesforce
-[tests-url]:        https://github.com/absolunet/stylelint-config/actions?query=workflow%3Atests+branch%3Amaster
-[npms-url]:         https://npms.io/search?q=%40absolunet%2Fstylelint-config-salesforce
+[npm-url]:          https://www.npmjs.com/package/@valtech-commerce/stylelint-config-salesforce
+[dependencies-url]: https://david-dm.org/valtech-commerce/stylelint-config?path=packages/salesforce
+[tests-url]:        https://github.com/valtech-commerce/stylelint-config/actions?query=workflow%3Atests+branch%3Amain
+[npms-url]:         https://npms.io/search?q=%40valtech-commerce%2Fstylelint-config-salesforce
 [license-url]:      https://opensource.org/licenses/MIT

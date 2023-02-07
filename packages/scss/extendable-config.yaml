@@ -1,4 +1,4 @@
-extends: "@absolunet/stylelint-config-core"
+extends: "@valtech-commerce/stylelint-config-core"
 
 customSyntax: "postcss-scss"
 

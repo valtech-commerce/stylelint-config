@@ -1,5 +1,5 @@
 extends:
-  - "@absolunet/stylelint-config-core"
+  - "@valtech-commerce/stylelint-config-core"
   - "stylelint-config-css-modules"
 
 rules:
@@ -79,7 +79,7 @@ rules:
           - composes
           - apply
 
-      # Absolunet Core
+      # Core
       - groupName: "Content"
         properties:
           - content

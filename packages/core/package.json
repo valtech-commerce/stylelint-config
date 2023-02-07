@@ -1,25 +1,25 @@
 {
-  "name": "@absolunet/stylelint-config-core",
+  "name": "@valtech-commerce/stylelint-config-core",
   "version": "3.1.1",
   "description": "stylelint config - Core rules",
   "definition": "",
-  "homepage": "https://github.com/absolunet/stylelint-config",
+  "homepage": "https://github.com/valtech-commerce/stylelint-config",
   "keywords": [
     "stylelint",
     "stylelintconfig",
     "stylelint-config"
   ],
   "author": {
-    "name": "Absolunet",
-    "url": "https://absolunet.com"
+    "name": "Valtech Canada inc.",
+    "url": "https://www.valtech.ca/"
   },
   "license": "MIT",
   "repository": {
-    "url": "git://github.com/absolunet/stylelint-config.git",
+    "url": "git://github.com/valtech-commerce/stylelint-config.git",
     "type": "git"
   },
   "bugs": {
-    "url": "https://github.com/absolunet/stylelint-config/issues"
+    "url": "https://github.com/valtech-commerce/stylelint-config/issues"
   },
   "engines": {
     "node": ">= 14.13.1"
@@ -40,7 +40,7 @@
     "stylelint-order": "5.0.0"
   },
   "dependencies": {
-    "@absolunet/stylelint-loader": "3.1.1"
+    "@valtech-commerce/stylelint-loader": "3.1.1"
   },
   "peerDependencies": {
     "stylelint": "^14.9.1",
