@@ -10,6 +10,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 
 ## [Unreleased]
+
+
+
+## [3.2.0] - 2023-02-15
 - Switch from multi packages to single package with multiple entrypoints
 
 
@@ -294,7 +298,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 
 
-[Unreleased]: https://github.com/valtech-commerce/stylelint-config/compare/3.1.1...HEAD
+[Unreleased]: https://github.com/valtech-commerce/stylelint-config/compare/3.2.0...HEAD
+[3.2.0]:      https://github.com/valtech-commerce/stylelint-config/compare/3.1.1...3.2.0
 [3.1.1]:      https://github.com/valtech-commerce/stylelint-config/compare/3.1.0...3.1.1
 [3.1.0]:      https://github.com/valtech-commerce/stylelint-config/compare/3.0.0...3.1.0
 [3.0.0]:      https://github.com/valtech-commerce/stylelint-config/compare/2.0.1...3.0.0
