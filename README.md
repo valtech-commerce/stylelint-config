@@ -10,19 +10,16 @@
 
 ## Rulesets
 
-| Ruleset                                         | Description                                     |
-| ----------------------------------------------- | ----------------------------------------------- |
-| **[core](extendable-config/core.yaml)**         | **Core rules**                                  |
-| [scss](extendable-config/scss.yaml)             | SCSS rules                                      |
-| [pwastudio](extendable-config/pwastudio.yaml)   | [PWA Studio](https://pwastudio.io) rules        |
-| [salesforce](extendable-config/salesforce.yaml) | [Salesforce](https://www.salesforce.com/) rules |
+| Ruleset                                 | Description    |
+| --------------------------------------- | -------------- |
+| **[core](extendable-config/core.yaml)** | **Core rules** |
+| [scss](extendable-config/scss.yaml)     | SCSS rules     |
 
 ### Dependency tree
 
 ```mermaid
   graph TD;
-    core --> scss & pwastudio
-    scss --> salesforce
+    core --> scss
 ```
 
 ## Install
@@ -53,13 +50,6 @@ extends: "@valtech-commerce/stylelint-config/[RULESET]"
 #### Used plugins
 
 - [stylelint-scss](https://github.com/kristerkari/stylelint-scss) - SCSS specific linting rules
-
-### `pwastudio`
-
-#### Used plugins / configuration
-
-- [stylelint-config-css-modules](https://github.com/pascalduez/stylelint-config-css-modules) - CSS modules shareable config for stylelint.
-- [stylelint-react-native](https://github.com/kristerkari/stylelint-react-native) - A collection of React Native specific linting rules
 
 ## Documentation
 

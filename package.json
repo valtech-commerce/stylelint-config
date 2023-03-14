@@ -9,8 +9,6 @@
     "url": "https://www.valtech.ca/"
   },
   "keywords": [
-    "pwa-studio",
-    "salesforce",
     "scss",
     "stylelint",
     "stylelintconfig",
@@ -30,8 +28,6 @@
   "main": "src/config",
   "exports": {
     "./core": "./src/config/core.js",
-    "./pwastudio": "./src/config/pwastudio.js",
-    "./salesforce": "./src/config/salesforce.js",
     "./scss": "./src/config/scss.js"
   },
   "scripts": {
@@ -75,7 +71,6 @@
   "peerDependencies": {
     "postcss-scss": "^4.0.4",
     "stylelint": "^14.9.1",
-    "stylelint-config-css-modules": "4.1.0",
     "stylelint-declaration-strict-value": "^1.8.0",
     "stylelint-order": "^5.0.0",
     "stylelint-scss": "^4.2.0"
