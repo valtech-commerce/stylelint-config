@@ -40,16 +40,18 @@ extends: "@valtech-commerce/stylelint-config/[RULESET]"
 
 ### `core`
 
-#### Used plugins
+#### Used plugins / configuration
 
 - [stylelint-declaration-strict-value](https://github.com/AndyOGo/stylelint-declaration-strict-value) - Enforces variables, functions, keywords for property's values
 - [stylelint-order](https://github.com/hudochenkov/stylelint-order) - Order related linting rules
+- [stylelint-config-standard](https://github.com/stylelint/stylelint-config-standard) - stylelint standard rules
 
 ### `scss`
 
-#### Used plugins
+#### Used plugins / configuration
 
 - [stylelint-scss](https://github.com/kristerkari/stylelint-scss) - SCSS specific linting rules
+- [stylelint-config-standard-scss](https://github.com/stylelint-scss/stylelint-config-standard-scss) - stylelint-scss standard rules
 
 ## Documentation
 

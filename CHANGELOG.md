@@ -15,8 +15,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Changed
 - `core`: Remove rules treated by Prettier
-- `core`: Use stylelint-config-standard
+- `core`: Use `stylelint-config-standard`
 - `core`: Update to stylelint 15 / stylelint-order 6
+- `scss`: Use `stylelint-config-standard-scss`
 
 
 

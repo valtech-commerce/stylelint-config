@@ -11,24 +11,25 @@
     "alpha-value-notation": [
       "number"
     ],
-    "annotation-no-unknown": [
-      true
-    ],
+    "annotation-no-unknown": null,
     "at-rule-disallowed-list": [
       "extend",
       {
-        "message": "Unexpected @extend directive (at-rule-disallowed-list)"
+        "message": "Unexpected @extend directive"
       }
     ],
     "at-rule-empty-line-before": [
       "always",
       {
         "except": [
-          "blockless-after-same-name-blockless",
+          "blockless-after-blockless",
           "first-nested"
         ],
         "ignore": [
           "after-comment"
+        ],
+        "ignoreAtRules": [
+          "else"
         ]
       }
     ],
@@ -36,26 +37,8 @@
     "at-rule-no-vendor-prefix": [
       true
     ],
-    "block-closing-brace-newline-after": [
-      "always",
-      {
-        "ignoreAtRules": [
-          "if",
-          "else"
-        ]
-      }
-    ],
     "block-no-empty": [
       true
-    ],
-    "block-opening-brace-space-before": [
-      "always",
-      {
-        "ignoreAtRules": [
-          "if",
-          "else"
-        ]
-      }
     ],
     "color-function-notation": [
       "legacy"
@@ -80,9 +63,7 @@
         ]
       }
     ],
-    "comment-no-empty": [
-      true
-    ],
+    "comment-no-empty": null,
     "comment-whitespace-inside": [
       "always"
     ],
@@ -231,7 +212,13 @@
       true
     ],
     "no-invalid-position-at-import-rule": [
-      true
+      true,
+      {
+        "ignoreAtRules": [
+          "use",
+          "forward"
+        ]
+      }
     ],
     "no-irregular-whitespace": [
       true
@@ -639,28 +626,33 @@
     "scss/at-else-closing-brace-newline-after": [
       "always-last-in-chain"
     ],
-    "scss/at-else-closing-brace-space-after": null,
+    "scss/at-else-closing-brace-space-after": [
+      "always-intermediate"
+    ],
     "scss/at-else-empty-line-before": [
       "never"
     ],
     "scss/at-else-if-parentheses-space-before": [
       "always"
     ],
-    "scss/at-extend-no-missing-placeholder": null,
-    "scss/at-function-named-arguments": null,
+    "scss/at-extend-no-missing-placeholder": [
+      true
+    ],
     "scss/at-function-parentheses-space-before": [
       "never"
     ],
     "scss/at-function-pattern": [
-      "^-?([a-z][a-z0-9]*)(-[a-z0-9]+)*$",
+      "^(-?[a-z][a-z0-9]*)(-[a-z0-9]+)*$",
       {
-        "message": "Function name must be kebab-case (scss/at-function-pattern)"
+        "message": "Expected function name to be kebab-case"
       }
     ],
     "scss/at-if-closing-brace-newline-after": [
       "always-last-in-chain"
     ],
-    "scss/at-if-closing-brace-space-after": null,
+    "scss/at-if-closing-brace-space-after": [
+      "always-intermediate"
+    ],
     "scss/at-if-no-null": [
       true
     ],
@@ -670,7 +662,6 @@
     "scss/at-import-partial-extension": [
       "never"
     ],
-    "scss/at-import-partial-extension-blacklist": null,
     "scss/at-import-partial-extension-whitelist": [
       "scss",
       "css"
@@ -678,14 +669,13 @@
     "scss/at-mixin-argumentless-call-parentheses": [
       "always"
     ],
-    "scss/at-mixin-named-arguments": null,
     "scss/at-mixin-parentheses-space-before": [
       "never"
     ],
     "scss/at-mixin-pattern": [
-      "^([a-z][a-z0-9]*)(-[a-z0-9]+)*$",
+      "^(-?[a-z][a-z0-9]*)(-[a-z0-9]+)*$",
       {
-        "message": "Mixin name must be kebab-case (scss/at-mixin-pattern)"
+        "message": "Expected mixin name to be kebab-case"
       }
     ],
     "scss/at-rule-conditional-no-parentheses": [
@@ -697,26 +687,37 @@
     "scss/at-use-no-unnamespaced": [
       true
     ],
-    "scss/comment-no-empty": null,
-    "scss/comment-no-loud": null,
+    "scss/comment-no-empty": [
+      true
+    ],
     "scss/declaration-nested-properties": [
       "never"
     ],
-    "scss/declaration-nested-properties-no-divided-groups": null,
+    "scss/declaration-nested-properties-no-divided-groups": [
+      true
+    ],
     "scss/dimension-no-non-numeric-values": [
       true
     ],
-    "scss/dollar-variable-colon-newline-after": null,
     "scss/dollar-variable-colon-space-after": [
-      "at-least-one-space"
+      "always"
     ],
     "scss/dollar-variable-colon-space-before": [
       "never"
     ],
-    "scss/dollar-variable-default": null,
-    "scss/dollar-variable-empty-line-after": null,
-    "scss/dollar-variable-empty-line-before": null,
-    "scss/dollar-variable-first-in-block": null,
+    "scss/dollar-variable-empty-line-before": [
+      "always",
+      {
+        "except": [
+          "after-dollar-variable",
+          "first-nested"
+        ],
+        "ignore": [
+          "after-comment",
+          "inside-single-line-block"
+        ]
+      }
+    ],
     "scss/dollar-variable-no-missing-interpolation": [
       true
     ],
@@ -724,16 +725,26 @@
       true
     ],
     "scss/dollar-variable-pattern": [
-      "^([a-z][a-z0-9]*)(-[a-z0-9]+)*$",
+      "^(-?[a-z][a-z0-9]*)(-[a-z0-9]+)*$",
       {
-        "message": "Variable name must be kebab-case (scss/dollar-variable-pattern)"
+        "message": "Expected variable to be kebab-case"
       }
     ],
-    "scss/double-slash-comment-empty-line-before": null,
-    "scss/double-slash-comment-inline": null,
-    "scss/double-slash-comment-whitespace-inside": null,
-    "scss/function-color-relative": null,
-    "scss/function-no-unknown": null,
+    "scss/double-slash-comment-empty-line-before": [
+      "always",
+      {
+        "except": [
+          "first-nested"
+        ],
+        "ignore": [
+          "between-comments",
+          "stylelint-commands"
+        ]
+      }
+    ],
+    "scss/double-slash-comment-whitespace-inside": [
+      "always"
+    ],
     "scss/function-quote-no-quoted-strings-inside": [
       true
     ],
@@ -746,7 +757,6 @@
     "scss/media-feature-value-dollar-variable": [
       "always"
     ],
-    "scss/no-dollar-variables": null,
     "scss/no-duplicate-dollar-variables": [
       true,
       {
@@ -768,9 +778,12 @@
     "scss/operator-no-unspaced": [
       true
     ],
-    "scss/partial-no-import": null,
-    "scss/percent-placeholder-pattern": null,
-    "scss/selector-nest-combinators": null,
+    "scss/percent-placeholder-pattern": [
+      "^(-?[a-z][a-z0-9]*)(-[a-z0-9]+)*$",
+      {
+        "message": "Expected placeholder to be kebab-case"
+      }
+    ],
     "scss/selector-no-redundant-nesting-selector": [
       true
     ],

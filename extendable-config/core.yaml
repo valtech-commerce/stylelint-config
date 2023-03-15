@@ -22,7 +22,7 @@ rules:
   comment-word-disallowed-list:
     - /todo/i
     - severity: warning
-      message: Don't forget this TODO
+      message: Hey! Don't forget about this TODO
 
   # [Declaration]
   declaration-property-value-disallowed-list:
@@ -74,7 +74,7 @@ rules:
     - message: Expected keyframe name "%s" to be kebab-case and end with "-animation"
   selector-id-pattern:
     - /\s\S/
-    - message: Unexpected id selector
+    - message: Unexpected id "#%s"
 
   #-- Plugins
 
