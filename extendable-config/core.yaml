@@ -15,21 +15,13 @@ rules:
 
   # Unknown
   ##TODO## declaration-property-value-no-unknown
-  no-unknown-animations: null # keyframes / animation in differents files
 
   #-- Enforce conventions
 
   # Allowed, disallowed & required
 
-  # [At-rule]
-  at-rule-allowed-list: null
-  at-rule-disallowed-list: null
-  at-rule-property-required-list: null
-
   # [Color]
   color-hex-alpha: never
-  color-named: null # via stylelint-declaration-strict-value
-  color-no-hex: null # via stylelint-declaration-strict-value
 
   # [Comment]
   comment-word-disallowed-list:
@@ -38,51 +30,26 @@ rules:
       message: Don't forget this TODO
 
   # [Declaration]
-  declaration-no-important: null
-  declaration-property-unit-allowed-list: null # via unit-allowed-list
-  declaration-property-unit-disallowed-list: null # via unit-allowed-list
-  declaration-property-value-allowed-list: null
   declaration-property-value-disallowed-list:
     - /^border/: /none|rem-calc/
       /^transition/: /all/
       /.*/: /rem-calc/
 
   # [Function]
-  function-allowed-list: null
-  function-disallowed-list: null
   function-url-no-scheme-relative: true
-  function-url-scheme-allowed-list: null
-  function-url-scheme-disallowed-list: null
 
   # [Media feature]
-  media-feature-name-allowed-list: null
-  media-feature-name-disallowed-list: null
   ##TODO## media-feature-name-unit-allowed-list
-  media-feature-name-value-allowed-list: null
 
   # [Property]
-  property-allowed-list: null
   property-disallowed-list:
     - font-smoothing
-
-  # [Rule]
-  rule-selector-property-disallowed-list: null
 
   # [Selector]
   selector-attribute-name-disallowed-list:
     - class
     - id
     - /^data-/
-  selector-attribute-operator-allowed-list: null
-  selector-attribute-operator-disallowed-list: null
-  selector-combinator-allowed-list: null
-  selector-combinator-disallowed-list: null
-  selector-disallowed-list: null
-  selector-no-qualifying-type: null
-  selector-pseudo-class-allowed-list: null
-  selector-pseudo-class-disallowed-list: null
-  selector-pseudo-element-allowed-list: null
-  selector-pseudo-element-disallowed-list: null
 
   # [Unit]
   unit-allowed-list:
@@ -97,39 +64,23 @@ rules:
     - ms
     - s
     - deg
-  unit-disallowed-list: null
 
   # Max & min
-  declaration-block-single-line-max-declarations: null # no single line
-  declaration-property-max-values: null
-  max-nesting-depth: null
-  selector-max-attribute: null
-  selector-max-class: null
-  selector-max-combinators: null
-  selector-max-compound-selectors: null
-  selector-max-id: null
-  selector-max-pseudo-class: null
-  selector-max-specificity: null
-  selector-max-type: null
   selector-max-universal: 0
-  time-min-milliseconds: null
 
   # Notation
   alpha-value-notation: number
   color-hex-length: long
-  font-weight-notation: null # via scale-unlimited/declaration-strict-value
   import-notation: string
   ##TODO## media-feature-range-notation
 
   # Pattern
-  comment-pattern: null
   keyframes-name-pattern:
     - ^([a-z][a-z0-9]*)(-[a-z0-9]+)*(-animation)$
     - message: Expected keyframe name "%s" to be kebab-case and end with "-animation"
   selector-id-pattern:
     - /\s\S/
     - message: Unexpected id selector
-  selector-nested-pattern: null
 
   #-- Plugins
 

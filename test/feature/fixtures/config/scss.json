@@ -14,7 +14,6 @@
     "annotation-no-unknown": [
       true
     ],
-    "at-rule-allowed-list": null,
     "at-rule-disallowed-list": [
       "extend",
       {
@@ -37,7 +36,6 @@
     "at-rule-no-vendor-prefix": [
       true
     ],
-    "at-rule-property-required-list": null,
     "block-closing-brace-newline-after": [
       "always",
       {
@@ -68,8 +66,6 @@
     "color-hex-length": [
       "long"
     ],
-    "color-named": null,
-    "color-no-hex": null,
     "color-no-invalid-hex": [
       true
     ],
@@ -87,7 +83,6 @@
     "comment-no-empty": [
       true
     ],
-    "comment-pattern": null,
     "comment-whitespace-inside": [
       "always"
     ],
@@ -139,7 +134,6 @@
     "declaration-block-no-shorthand-property-overrides": [
       true
     ],
-    "declaration-block-single-line-max-declarations": null,
     "declaration-empty-line-before": [
       "always",
       {
@@ -153,11 +147,6 @@
         ]
       }
     ],
-    "declaration-no-important": null,
-    "declaration-property-max-values": null,
-    "declaration-property-unit-allowed-list": null,
-    "declaration-property-unit-disallowed-list": null,
-    "declaration-property-value-allowed-list": null,
     "declaration-property-value-disallowed-list": [
       {
         "/.*/": "/rem-calc/",
@@ -174,12 +163,9 @@
     "font-family-no-missing-generic-family-keyword": [
       true
     ],
-    "font-weight-notation": null,
-    "function-allowed-list": null,
     "function-calc-no-unspaced-operator": [
       true
     ],
-    "function-disallowed-list": null,
     "function-linear-gradient-no-nonstandard-direction": [
       true
     ],
@@ -193,8 +179,6 @@
     "function-url-quotes": [
       "always"
     ],
-    "function-url-scheme-allowed-list": null,
-    "function-url-scheme-disallowed-list": null,
     "hue-degree-notation": [
       "angle"
     ],
@@ -224,16 +208,12 @@
         ]
       }
     ],
-    "max-nesting-depth": null,
-    "media-feature-name-allowed-list": null,
-    "media-feature-name-disallowed-list": null,
     "media-feature-name-no-unknown": [
       true
     ],
     "media-feature-name-no-vendor-prefix": [
       true
     ],
-    "media-feature-name-value-allowed-list": null,
     "named-grid-areas-no-invalid": [
       true
     ],
@@ -256,7 +236,6 @@
     "no-irregular-whitespace": [
       true
     ],
-    "no-unknown-animations": null,
     "number-max-precision": [
       4
     ],
@@ -567,7 +546,6 @@
         "unspecified": "bottomAlphabetical"
       }
     ],
-    "property-allowed-list": null,
     "property-disallowed-list": [
       [
         "font-smoothing"
@@ -590,7 +568,6 @@
         ]
       }
     ],
-    "rule-selector-property-disallowed-list": null,
     "scale-unlimited/declaration-strict-value": [
       [
         "z-index",
@@ -765,8 +742,6 @@
         "/^data-/"
       ]
     ],
-    "selector-attribute-operator-allowed-list": null,
-    "selector-attribute-operator-disallowed-list": null,
     "selector-attribute-quotes": [
       "always"
     ],
@@ -777,44 +752,27 @@
         "resolveNestedSelectors": true
       }
     ],
-    "selector-combinator-allowed-list": null,
-    "selector-combinator-disallowed-list": null,
-    "selector-disallowed-list": null,
     "selector-id-pattern": [
       "/\\s\\S/",
       {
         "message": "Unexpected id selector"
       }
     ],
-    "selector-max-attribute": null,
-    "selector-max-class": null,
-    "selector-max-combinators": null,
-    "selector-max-compound-selectors": null,
-    "selector-max-id": null,
-    "selector-max-pseudo-class": null,
-    "selector-max-specificity": null,
-    "selector-max-type": null,
     "selector-max-universal": [
       0
     ],
-    "selector-nested-pattern": null,
-    "selector-no-qualifying-type": null,
     "selector-no-vendor-prefix": [
       true
     ],
     "selector-not-notation": [
       "complex"
     ],
-    "selector-pseudo-class-allowed-list": null,
-    "selector-pseudo-class-disallowed-list": null,
     "selector-pseudo-class-no-unknown": [
       true
     ],
-    "selector-pseudo-element-allowed-list": null,
     "selector-pseudo-element-colon-notation": [
       "double"
     ],
-    "selector-pseudo-element-disallowed-list": null,
     "selector-pseudo-element-no-unknown": [
       true
     ],
@@ -835,7 +793,6 @@
     "string-no-newline": [
       true
     ],
-    "time-min-milliseconds": null,
     "unit-allowed-list": [
       [
         "rem",
@@ -851,7 +808,6 @@
         "deg"
       ]
     ],
-    "unit-disallowed-list": null,
     "unit-no-unknown": [
       true
     ],
