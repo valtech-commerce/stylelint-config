@@ -10,9 +10,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 
 ## [Unreleased]
+## Add
+- `core`: Add property order for Grid and Scheme
+
 ## Changed
 - `core`: Remove rules treated by Prettier
 - `core`: Use stylelint-config-standard
+- `core`: Update to stylelint 15 / stylelint-order 6
 
 
 
@@ -30,7 +34,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [3.1.0] - 2022-07-06
 ### Added
-- Create `@valtech-commerce/stylelint-config-pwastudio` - PWA Studio rules
+- Create `@absolunet/stylelint-config-pwastudio` - PWA Studio rules
 - `core`: Add `function-no-unknown`
 - `core`: Add `keyframe-block-no-duplicate-selectors`
 - `core`: Add `import-notation` with `string`
@@ -50,7 +54,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [3.0.0] - 2021-11-11
 ### Added
-- Recover `@valtech-commerce/stylelint-loader` in this repository
+- Recover `@absolunet/stylelint-loader` in this repository
 - Manage SCSS syntax manually
 
 ### Changed
@@ -79,13 +83,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [2.0.0] - 2021-02-25
 ### Added
-- Creation of `@valtech-commerce/stylelint-config-core` - Core rules
-- Creation of `@valtech-commerce/stylelint-config-scss` - SCSS rules
-- Creation of `@valtech-commerce/stylelint-config-salesforce` - Salesforce rules
+- Creation of `@absolunet/stylelint-config-core` - Core rules
+- Creation of `@absolunet/stylelint-config-scss` - SCSS rules
+- Creation of `@absolunet/stylelint-config-salesforce` - Salesforce rules
 
 ### Changed
 - Support Node.js 10+
-- Migration to @valtech-commerce/tester 4
+- Migration to @absolunet/tester 4
 - Maintenance updates
 
 #### Update to stylelint 13.11.0
@@ -138,7 +142,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Ignored `scss/dollar-variable-first-in-block` (covered by `order/order`)
 
 ### Removed
-- Remove `@valtech-commerce/stylelint-config-nwayo` package (Replaced by `@valtech-commerce/stylelint-config-scss`)
+- Remove `@absolunet/stylelint-config-nwayo` package (Replaced by `@absolunet/stylelint-config-scss`)
 - Remove distribution from git repository
 
 
@@ -157,7 +161,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [1.3.0] - 2019-11-04
 ### Changed
-- Migration to @valtech-commerce/manager 2 and @valtech-commerce/tester 3
+- Migration to @absolunet/manager 2 and @absolunet/tester 3
 - Update to stylelint-order 3.1.1
 - Update to stylelint-declaration-strict-value 1.1.6
 

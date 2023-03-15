@@ -217,8 +217,6 @@
     "number-max-precision": [
       4
     ],
-    "order/order": null,
-    "order/properties-alphabetical-order": null,
     "order/properties-order": [
       [
         {
@@ -251,7 +249,7 @@
             "overflow-y",
             "overflow-style",
             "overflow-wrap",
-            "overflow-scrolling",
+            "overflow-anchor",
             "clip",
             "clip-path",
             "clip-rule",
@@ -278,6 +276,30 @@
             "align-content",
             "align-self",
             "order"
+          ]
+        },
+        {
+          "groupName": "Grid",
+          "properties": [
+            "grid",
+            "grid-template",
+            "grid-template-rows",
+            "grid-template-columns",
+            "grid-template-areas",
+            "grid-auto-rows",
+            "grid-auto-columns",
+            "grid-auto-flow",
+            "grid-column-gap",
+            "grid-row-gap",
+            "column-gap",
+            "row-gap",
+            "grid-area",
+            "grid-row",
+            "grid-row-start",
+            "grid-row-end",
+            "grid-column",
+            "grid-column-start",
+            "grid-column-end"
           ]
         },
         {
@@ -352,6 +374,15 @@
           ]
         },
         {
+          "groupName": "Scheme",
+          "properties": [
+            "color-scheme",
+            "color-adjust",
+            "forced-color-adjust",
+            "print-color-adjust"
+          ]
+        },
+        {
           "groupName": "Background",
           "properties": [
             "background",
@@ -378,6 +409,10 @@
             "font-style",
             "font-kerning",
             "font-stretch",
+            "font-optical-sizing",
+            "font-palette",
+            "font-synthesis",
+            "font-synthesis-style",
             "font-variant",
             "font-variant-alternates",
             "font-variant-caps",
@@ -385,9 +420,7 @@
             "font-variant-ligatures",
             "font-variant-numeric",
             "font-variant-position",
-            "font-variation-settings",
             "font-feature-settings",
-            "font-language-override",
             "text-align",
             "text-align-all",
             "text-align-last",
@@ -395,10 +428,11 @@
             "text-indent",
             "text-transform",
             "text-decoration",
+            "text-decoration-color",
             "text-decoration-line",
             "text-decoration-style",
-            "text-decoration-color",
-            "text-decoration-skip",
+            "text-decoration-thickness",
+            "text-decoration-skip-ink",
             "text-underline-position",
             "text-shadow",
             "text-combine-upright",
@@ -409,6 +443,7 @@
             "text-emphasis-color",
             "text-emphasis-position",
             "line-height",
+            "writing-mode",
             "direction",
             "letter-spacing",
             "tab-size",
@@ -430,6 +465,9 @@
             "column-gap",
             "column-fill",
             "column-rule",
+            "column-rule-width",
+            "column-rule-style",
+            "column-rule-color",
             "column-span",
             "column-count",
             "column-width"
@@ -439,6 +477,7 @@
           "groupName": "Alteration",
           "properties": [
             "filter",
+            "image-rendering",
             "transform",
             "transform-origin",
             "transform-box"
@@ -462,6 +501,8 @@
             "animation-duration",
             "animation-timing-function",
             "animation-delay",
+            "animation-delay-start",
+            "animation-delay-end",
             "animation-iteration-count",
             "animation-direction",
             "animation-fill-mode",
@@ -545,9 +586,6 @@
         "message": "Unexpected id selector"
       }
     ],
-    "selector-max-universal": [
-      0
-    ],
     "selector-no-vendor-prefix": [
       true
     ],
@@ -599,7 +637,12 @@
       true
     ],
     "value-keyword-case": [
-      "lower"
+      "lower",
+      {
+        "ignoreKeywords": [
+          "optimizeLegibility"
+        ]
+      }
     ],
     "value-no-vendor-prefix": [
       true,
