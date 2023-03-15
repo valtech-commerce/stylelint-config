@@ -11,7 +11,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 ## Changed
-- Remove core rules treated by Prettier
+- `core`: Remove rules treated by Prettier
+- `core`: Use stylelint-config-recommended
 
 
 

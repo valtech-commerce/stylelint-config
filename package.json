@@ -58,14 +58,14 @@
     "prettier": "^2.8.4",
     "sort-json": "^2.0.1",
     "stylelint": "14.9.1",
-    "stylelint-config-css-modules": "4.1.0",
     "stylelint-declaration-strict-value": "1.8.0",
     "stylelint-order": "5.0.0",
     "stylelint-scss": "4.2.0"
   },
   "dependencies": {
     "@valtech-commerce/fs": "^1.7.0",
-    "deepmerge": "^4.3.0"
+    "deepmerge": "^4.3.0",
+    "stylelint-config-recommended": "10.0.1"
   },
   "peerDependencies": {
     "postcss-scss": "^4.0.4",

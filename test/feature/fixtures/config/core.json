@@ -9,6 +9,9 @@
     "alpha-value-notation": [
       "number"
     ],
+    "annotation-no-unknown": [
+      true
+    ],
     "at-rule-allowed-list": null,
     "at-rule-disallowed-list": null,
     "at-rule-empty-line-before": null,
@@ -72,7 +75,12 @@
       true
     ],
     "declaration-block-no-duplicate-properties": [
-      true
+      true,
+      {
+        "ignore": [
+          "consecutive-duplicates-with-different-values"
+        ]
+      }
     ],
     "declaration-block-no-redundant-longhand-properties": [
       true
@@ -560,7 +568,12 @@
       "lower"
     ],
     "selector-type-no-unknown": [
-      true
+      true,
+      {
+        "ignore": [
+          "custom-elements"
+        ]
+      }
     ],
     "shorthand-property-no-redundant-values": [
       true
@@ -585,7 +598,9 @@
       ]
     ],
     "unit-disallowed-list": null,
-    "unit-no-unknown": null,
+    "unit-no-unknown": [
+      true
+    ],
     "value-keyword-case": [
       "lower",
       {

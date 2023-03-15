@@ -1,3 +1,6 @@
+extends:
+  - stylelint-config-recommended
+
 defaultSeverity: error
 
 plugins:
@@ -8,53 +11,11 @@ rules:
   #-- Avoid errors
 
   # Descending
-  no-descending-specificity: null # too complicated to implement
-
-  # Duplicate
-  declaration-block-no-duplicate-custom-properties: true
-  declaration-block-no-duplicate-properties: true
-  font-family-no-duplicate-names: true
-  keyframe-block-no-duplicate-selectors: true
-  no-duplicate-at-import-rules: true
-  no-duplicate-selectors: true
-
-  # Empty
-  block-no-empty: true
-  comment-no-empty: true
-  no-empty-source: true
-
-  # Invalid
-  color-no-invalid-hex: true
-  function-calc-no-unspaced-operator: true
-  keyframe-declaration-no-important: true
-  named-grid-areas-no-invalid: true
-  no-invalid-double-slash-comments: true
-  no-invalid-position-at-import-rule: true
-  string-no-newline: true
-
-  # Irregular
-  no-irregular-whitespace: true
-
-  # Missing
-  custom-property-no-missing-var-function: true
-  font-family-no-missing-generic-family-keyword: true
-
-  # Non-standard
-  function-linear-gradient-no-nonstandard-direction: true
-
-  # Overrides
-  declaration-block-no-shorthand-property-overrides: true
+  no-descending-specificity: null
 
   # Unknown
-  at-rule-no-unknown: true
-  function-no-unknown: true
-  media-feature-name-no-unknown: true
+  ##TODO## declaration-property-value-no-unknown
   no-unknown-animations: null # keyframes / animation in differents files
-  property-no-unknown: true
-  selector-pseudo-class-no-unknown: true
-  selector-pseudo-element-no-unknown: true
-  selector-type-no-unknown: true
-  unit-no-unknown: null # via unit-allowed-list
 
   #-- Enforce conventions
 
@@ -101,6 +62,7 @@ rules:
   media-feature-name-allowed-list: null
   media-feature-name-disallowed-list: null
   media-feature-name-no-vendor-prefix: true
+  ##TODO## media-feature-name-unit-allowed-list
   media-feature-name-value-allowed-list: null
 
   # [Property]
@@ -194,6 +156,8 @@ rules:
   font-weight-notation: null # via scale-unlimited/declaration-strict-value
   hue-degree-notation: angle
   import-notation: string
+  ##TODO## keyframe-selector-notation
+  ##TODO## media-feature-range-notation
   selector-not-notation: complex
   selector-pseudo-element-colon-notation: double
 
