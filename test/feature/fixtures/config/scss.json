@@ -21,7 +21,18 @@
         "message": "Unexpected @extend directive (at-rule-disallowed-list)"
       }
     ],
-    "at-rule-empty-line-before": null,
+    "at-rule-empty-line-before": [
+      "always",
+      {
+        "except": [
+          "blockless-after-same-name-blockless",
+          "first-nested"
+        ],
+        "ignore": [
+          "after-comment"
+        ]
+      }
+    ],
     "at-rule-no-unknown": null,
     "at-rule-no-vendor-prefix": [
       true
@@ -65,9 +76,10 @@
     "comment-empty-line-before": [
       "always",
       {
-        "except": "first-nested",
+        "except": [
+          "first-nested"
+        ],
         "ignore": [
-          "after-comment",
           "stylelint-commands"
         ]
       }
@@ -86,14 +98,30 @@
         "severity": "warning"
       }
     ],
-    "custom-media-pattern": null,
+    "custom-media-pattern": [
+      "^([a-z][a-z0-9]*)(-[a-z0-9]+)*$",
+      {}
+    ],
     "custom-property-empty-line-before": [
-      "never"
+      "always",
+      {
+        "except": [
+          "after-custom-property",
+          "first-nested"
+        ],
+        "ignore": [
+          "after-comment",
+          "inside-single-line-block"
+        ]
+      }
     ],
     "custom-property-no-missing-var-function": [
       true
     ],
-    "custom-property-pattern": null,
+    "custom-property-pattern": [
+      "^([a-z][a-z0-9]*)(-[a-z0-9]+)*$",
+      {}
+    ],
     "declaration-block-no-duplicate-custom-properties": [
       true
     ],
@@ -113,7 +141,17 @@
     ],
     "declaration-block-single-line-max-declarations": null,
     "declaration-empty-line-before": [
-      "never"
+      "always",
+      {
+        "except": [
+          "after-declaration",
+          "first-nested"
+        ],
+        "ignore": [
+          "after-comment",
+          "inside-single-line-block"
+        ]
+      }
     ],
     "declaration-no-important": null,
     "declaration-property-max-values": null,
@@ -153,10 +191,7 @@
       true
     ],
     "function-url-quotes": [
-      "always",
-      {
-        "except": "empty"
-      }
+      "always"
     ],
     "function-url-scheme-allowed-list": null,
     "function-url-scheme-disallowed-list": null,
@@ -172,11 +207,22 @@
     "keyframe-declaration-no-important": [
       true
     ],
+    "keyframe-selector-notation": [
+      "percentage-unless-within-keyword-only-block"
+    ],
     "keyframes-name-pattern": [
-      "^([a-z][a-z0-9]*)(-[a-z0-9]+)*(-animation)$"
+      "^([a-z][a-z0-9]*)(-[a-z0-9]+)*(-animation)$",
+      {
+        "message": "Expected keyframe name \"%s\" to be kebab-case and end with \"-animation\""
+      }
     ],
     "length-zero-no-unit": [
-      true
+      true,
+      {
+        "ignore": [
+          "custom-properties"
+        ]
+      }
     ],
     "max-nesting-depth": null,
     "media-feature-name-allowed-list": null,
@@ -212,7 +258,7 @@
     ],
     "no-unknown-animations": null,
     "number-max-precision": [
-      10
+      4
     ],
     "order/order": [
       [
@@ -534,10 +580,9 @@
       true
     ],
     "rule-empty-line-before": [
-      "always",
+      "always-multi-line",
       {
         "except": [
-          "after-single-line-comment",
           "first-nested"
         ],
         "ignore": [
@@ -728,7 +773,7 @@
     "selector-class-pattern": [
       "^([a-z][a-z0-9]*)(-[a-z0-9]+)*$",
       {
-        "message": "Class selector must be kebab-case (selector-class-pattern)",
+        "message": "Expected class selector \"%s\" to be kebab-case",
         "resolveNestedSelectors": true
       }
     ],
@@ -738,7 +783,7 @@
     "selector-id-pattern": [
       "/\\s\\S/",
       {
-        "message": "Unexpected id selector (selector-id-pattern)"
+        "message": "Unexpected id selector"
       }
     ],
     "selector-max-attribute": null,
@@ -811,15 +856,16 @@
       true
     ],
     "value-keyword-case": [
-      "lower",
-      {
-        "ignoreKeywords": [
-          "optimizeLegibility"
-        ]
-      }
+      "lower"
     ],
     "value-no-vendor-prefix": [
-      true
+      true,
+      {
+        "ignoreValues": [
+          "box",
+          "inline-box"
+        ]
+      }
     ]
   }
 }

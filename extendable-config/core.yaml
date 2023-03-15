@@ -1,5 +1,5 @@
 extends:
-  - stylelint-config-recommended
+  - stylelint-config-standard
 
 defaultSeverity: error
 
@@ -24,7 +24,6 @@ rules:
   # [At-rule]
   at-rule-allowed-list: null
   at-rule-disallowed-list: null
-  at-rule-no-vendor-prefix: true
   at-rule-property-required-list: null
 
   # [Color]
@@ -55,13 +54,9 @@ rules:
   function-url-scheme-allowed-list: null
   function-url-scheme-disallowed-list: null
 
-  # [Length]
-  length-zero-no-unit: true
-
   # [Media feature]
   media-feature-name-allowed-list: null
   media-feature-name-disallowed-list: null
-  media-feature-name-no-vendor-prefix: true
   ##TODO## media-feature-name-unit-allowed-list
   media-feature-name-value-allowed-list: null
 
@@ -69,7 +64,6 @@ rules:
   property-allowed-list: null
   property-disallowed-list:
     - font-smoothing
-  property-no-vendor-prefix: true
 
   # [Rule]
   rule-selector-property-disallowed-list: null
@@ -85,7 +79,6 @@ rules:
   selector-combinator-disallowed-list: null
   selector-disallowed-list: null
   selector-no-qualifying-type: null
-  selector-no-vendor-prefix: true
   selector-pseudo-class-allowed-list: null
   selector-pseudo-class-disallowed-list: null
   selector-pseudo-element-allowed-list: null
@@ -106,38 +99,10 @@ rules:
     - deg
   unit-disallowed-list: null
 
-  # [Value]
-  value-no-vendor-prefix: true
-
-  # Case
-  function-name-case: lower
-  selector-type-case: lower
-  value-keyword-case:
-    - lower
-    - ignoreKeywords:
-        - optimizeLegibility
-
-  # Empty lines
-  at-rule-empty-line-before: null
-  comment-empty-line-before:
-    - always
-    - except: first-nested
-      ignore: [after-comment, stylelint-commands]
-  custom-property-empty-line-before: never
-  declaration-empty-line-before: never
-  rule-empty-line-before:
-    - always
-    - except:
-        - after-single-line-comment
-        - first-nested
-      ignore:
-        - after-comment
-
   # Max & min
   declaration-block-single-line-max-declarations: null # no single line
   declaration-property-max-values: null
   max-nesting-depth: null
-  number-max-precision: 10
   selector-max-attribute: null
   selector-max-class: null
   selector-max-combinators: null
@@ -151,43 +116,20 @@ rules:
 
   # Notation
   alpha-value-notation: number
-  color-function-notation: modern
   color-hex-length: long
   font-weight-notation: null # via scale-unlimited/declaration-strict-value
-  hue-degree-notation: angle
   import-notation: string
-  ##TODO## keyframe-selector-notation
   ##TODO## media-feature-range-notation
-  selector-not-notation: complex
-  selector-pseudo-element-colon-notation: double
 
   # Pattern
   comment-pattern: null
-  custom-media-pattern: null
-  custom-property-pattern: null
-  keyframes-name-pattern: ^([a-z][a-z0-9]*)(-[a-z0-9]+)*(-animation)$
-  selector-class-pattern:
-    - ^([a-z][a-z0-9]*)(-[a-z0-9]+)*$
-    - resolveNestedSelectors: true
-      message: Class selector must be kebab-case (selector-class-pattern)
+  keyframes-name-pattern:
+    - ^([a-z][a-z0-9]*)(-[a-z0-9]+)*(-animation)$
+    - message: Expected keyframe name "%s" to be kebab-case and end with "-animation"
   selector-id-pattern:
     - /\s\S/
-    - message: Unexpected id selector (selector-id-pattern)
+    - message: Unexpected id selector
   selector-nested-pattern: null
-
-  # Quotes
-  font-family-name-quotes: always-where-recommended
-  function-url-quotes:
-    - always
-    - except: empty
-  selector-attribute-quotes: always
-
-  # Redundant
-  declaration-block-no-redundant-longhand-properties: true
-  shorthand-property-no-redundant-values: true
-
-  # Whitespace inside
-  comment-whitespace-inside: always
 
   #-- Plugins
 
