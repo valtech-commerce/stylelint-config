@@ -3,9 +3,9 @@
   "defaultSeverity": "error",
   "pluginFunctions": {},
   "plugins": [
-    "/node_modules/stylelint-scss/dist/index.js",
     "/node_modules/stylelint-declaration-strict-value/dist/index.js",
-    "/node_modules/stylelint-order/index.js"
+    "/node_modules/stylelint-order/index.js",
+    "/node_modules/stylelint-scss/dist/index.js"
   ],
   "rules": {
     "alpha-value-notation": [
@@ -15,7 +15,7 @@
     "at-rule-disallowed-list": [
       "extend",
       {
-        "message": "Unexpected @extend directive"
+        "message": "Unexpected \"@extend\" directive"
       }
     ],
     "at-rule-empty-line-before": [
@@ -70,7 +70,7 @@
     "comment-word-disallowed-list": [
       "/todo/i",
       {
-        "message": "Don't forget this TODO",
+        "message": "Hey! Don't forget about this TODO",
         "severity": "warning"
       }
     ],
@@ -224,7 +224,7 @@
       true
     ],
     "number-max-precision": [
-      4
+      10
     ],
     "order/order": [
       [
@@ -284,6 +284,13 @@
           "groupName": "Position",
           "properties": [
             "position",
+            "inset",
+            "inset-block",
+            "inset-block-start",
+            "inset-block-end",
+            "inset-inline",
+            "inset-inline-start",
+            "inset-inline-end",
             "top",
             "right",
             "bottom",
@@ -607,6 +614,7 @@
         "font-weight"
       ],
       {
+        "disableFix": true,
         "ignoreValues": {
           "": [
             "currentColor",
@@ -810,7 +818,7 @@
     "selector-id-pattern": [
       "/\\s\\S/",
       {
-        "message": "Unexpected id selector"
+        "message": "Unexpected id \"%s\""
       }
     ],
     "selector-no-vendor-prefix": [

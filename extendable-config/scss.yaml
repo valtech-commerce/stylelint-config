@@ -1,34 +1,9 @@
 extends:
   - stylelint-config-standard-scss
-  - "../config/core"
 
 customSyntax: postcss-scss
 
 rules:
-  #-- Re-add stylelint-config-recommended-scss / stylelint-config-standard-scss rules
-  #--------
-  annotation-no-unknown: null
-  at-rule-no-unknown: null
-  comment-no-empty: null
-  function-no-unknown: null
-  no-invalid-position-at-import-rule:
-    - true
-    - ignoreAtRules:
-        - use
-        - forward
-  #--------
-  at-rule-empty-line-before:
-    - always
-    - except:
-        - blockless-after-blockless
-        - first-nested
-      ignore:
-        - after-comment
-      ignoreAtRules:
-        - else
-  import-notation: string
-  #--------
-
   # Disallow @extend
   at-rule-disallowed-list:
     - extend

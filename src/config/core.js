@@ -3,4 +3,4 @@
 //--------------------------------------------------------
 const getConfig = require("../get-config");
 
-module.exports = getConfig("core");
+module.exports = getConfig("_common", "core");

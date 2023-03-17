@@ -65,7 +65,7 @@
     "comment-word-disallowed-list": [
       "/todo/i",
       {
-        "message": "Don't forget this TODO",
+        "message": "Hey! Don't forget about this TODO",
         "severity": "warning"
       }
     ],
@@ -215,7 +215,7 @@
       true
     ],
     "number-max-precision": [
-      4
+      10
     ],
     "order/properties-order": [
       [
@@ -230,6 +230,13 @@
           "groupName": "Position",
           "properties": [
             "position",
+            "inset",
+            "inset-block",
+            "inset-block-start",
+            "inset-block-end",
+            "inset-inline",
+            "inset-inline-start",
+            "inset-inline-end",
             "top",
             "right",
             "bottom",
@@ -553,6 +560,7 @@
         "font-weight"
       ],
       {
+        "disableFix": true,
         "ignoreValues": {
           "": [
             "currentColor",
@@ -565,6 +573,9 @@
           ]
         }
       }
+    ],
+    "selector-anb-no-unmatchable": [
+      true
     ],
     "selector-attribute-name-disallowed-list": [
       [
@@ -583,7 +594,7 @@
     "selector-id-pattern": [
       "/\\s\\S/",
       {
-        "message": "Unexpected id selector"
+        "message": "Unexpected id \"%s\""
       }
     ],
     "selector-no-vendor-prefix": [
