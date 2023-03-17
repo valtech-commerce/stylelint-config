@@ -1,6 +1,6 @@
 {
   "name": "@valtech-commerce/stylelint-config",
-  "version": "3.2.0",
+  "version": "4.0.0",
   "description": "Valtech_Commerce stylelint configurations",
   "definition": "",
   "homepage": "https://github.com/valtech-commerce/stylelint-config",
